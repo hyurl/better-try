@@ -267,8 +267,8 @@ describe("try-catch blocks", () => {
             isDone = false;
 
         class MyError extends Error {
-            constructor(...args) {
-                super(...args);
+            constructor(msg) {
+                super(msg);
                 this.name = this.constructor.name;
             }
         }
